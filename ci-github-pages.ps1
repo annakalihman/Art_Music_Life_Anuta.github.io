@@ -49,6 +49,6 @@ Write-Host "Обновление ветки deploy: Успех" -ForegroundColor
 
 Write-Host "Публикация..." -ForegroundColor Blue
 
-git push main --all
+git push origin --all
 
 git checkout main
