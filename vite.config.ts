@@ -5,6 +5,7 @@
 
   export default defineConfig({
     plugins: [react()],
+    base: "/Art_Music_Life_Anuta.github.io/" ,
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
