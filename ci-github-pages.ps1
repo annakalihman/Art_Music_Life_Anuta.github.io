@@ -38,7 +38,7 @@ if (test-Path -Path $assets) {
 
 Write-Host "Копирование новых файлов сборки" -ForegroundColor Blue
 
-Copy-Item -Path ".\build\*" -Destination ".\"
+Copy-Item -Path ".\build\*" -Destination ".\" -Recurse
 Remove-Item -Path ".\build" -Force -Recurse -Confirm:$false
 
 $commitId = New-Guid
