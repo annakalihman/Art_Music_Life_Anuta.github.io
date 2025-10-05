@@ -9,13 +9,15 @@ git checkout main
 git add .
 git commit -m "{$msg}"
 
+git push
+
 Write-Host "Обновление ветки main: Успех" -ForegroundColor Green
 
 Write-Host "Сборка и восстановление зависимостей" -ForegroundColor Blue
 
 npm i
-nmp exec yarn
-nmp exec yarn build
+npm exec yarn
+npm exec yarn build
 
 Write-Host "Сборка и восстановление зависимостей: Успех" -ForegroundColor Green
 
