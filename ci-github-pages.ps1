@@ -1,15 +1,13 @@
 ﻿$msg = Read-Host -Prompt "Введите название изменения"
 
-git fetch
+git pull
 
 Write-Host "Обновление ветки main" -ForegroundColor Blue
 
 git checkout main
 
 git add .
-git commit -m "{$msg}"
-
-git push
+git commit -m "$msg"
 
 Write-Host "Обновление ветки main: Успех" -ForegroundColor Green
 
@@ -51,6 +49,6 @@ Write-Host "Обновление ветки deploy: Успех" -ForegroundColor
 
 Write-Host "Публикация..." -ForegroundColor Blue
 
-git push
+git push main --all
 
 git checkout main
